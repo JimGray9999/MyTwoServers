@@ -1,4 +1,4 @@
-var http = require("http");
+const http = require("http");
 
 const PORTGOOD = 7000; // all caps since they are declared as constants
 const PORTMEAN = 7500;
@@ -15,8 +15,8 @@ function handleMeanRequest(request, response){
 }
 
 // declare our servers
-var goodServer = http.createServer(handleGoodRequest);
-var meanServer = http.createServer(handleMeanRequest);
+const goodServer = http.createServer(handleGoodRequest);
+const meanServer = http.createServer(handleMeanRequest);
 
 
 // listening on each new server
