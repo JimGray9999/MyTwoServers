@@ -1,7 +1,7 @@
 var http = require("http");
 
-var PORTGOOD = 7000; // all caps since they are declared as constants
-var PORTMEAN = 7500;
+const PORTGOOD = 7000; // all caps since they are declared as constants
+const PORTMEAN = 7500;
 
 // response for any request to locahost:7000
 function handleGoodRequest(request, response){
